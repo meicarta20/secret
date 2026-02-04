@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DAYOL - My Digital Diary</title>
+    <title>Adalah Pokoknya</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
         <header class="header">
             <div class="logo">
                 <span class="logo-icon">📔</span>
-                <span class="logo-text">DAYOL</span>
+                <span class="logo-text">Adalah Pokoknya</span>
             </div>
             <button class="menu-btn">☰</button>
         </header>
@@ -111,4 +111,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>
