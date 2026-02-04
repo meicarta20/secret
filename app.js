@@ -7,16 +7,18 @@ let entries = JSON.parse(localStorage.getItem(ENTRIES_KEY)) || [
     {
         id: 1,
         title: "A Peaceful Day in Nature",
-        content: "Today I went for a walk in the forest. The gentle breeze through the trees reminded me of a Ghibli film. I saw a little cat by the stream, and it made me think of Totoro. The world feels so magical when you slow down and really look at it.",
+        content: " Today felt quiet, the kind of quiet that comes after you let something go I learned that caring doesn’t always mean holding on — sometimes it means wishing someone well from a distance. Wherever you are, I hope life treats you gently, and that you find the peace you’re looking for.
+",
         mood: "😊",
         date: new Date('2026-02-04').toISOString()
     },
     {
         id: 2,
-        title: "Dreams and Tea",
-        content: "I made some chamomile tea this afternoon and sat by the window. The rain was falling gently, creating patterns on the glass. I thought about my dreams and where I want to go. Sometimes the quiet moments are the most precious.",
+        title: "Rain Knows Best",
+        content: " The rain fell without asking permission. It reminded me that some feelings don’t need answers , they just need space, And maybe, time will take care of the rest.
+",
         mood: "🥰",
-        date: new Date('2026-02-03').toISOString()
+        date: new Date('2026-02-04').toISOString()
     }
 ];
 
@@ -213,4 +215,5 @@ window.onclick = function(event) {
 // Render entries when page loads
 document.addEventListener('DOMContentLoaded', function() {
     renderEntries();
+
 });
