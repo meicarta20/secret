@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAYOL - My Digital Diary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">📔</span>
+                <span class="logo-text">DAYOL</span>
+            </div>
+            <button class="menu-btn">☰</button>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="diaries-grid">
+                <div class="diary-card" onclick="location.href='diary.html'">
+                    <div class="diary-cover">
+                        <h3 class="diary-title">my planner ♡</h3>
+                        <div class="diary-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Crect fill='%23f0f8f0' width='200' height='200'/%3E%3Ctext x='50%25' y='50%25' font-size='18' text-anchor='middle' fill='%234a7c4a' font-family='cursive'%3EPlanner%3C/text%3E%3C/svg%3E" alt="my planner">
+                            <div class="ribbon"></div>
+                        </div>
+                        <div class="heart-icon">♡</div>
+                    </div>
+                    <div class="diary-info">
+                        <span class="diary-name">New Diary</span>
+                        <span class="diary-badge">🔒</span>
+                    </div>
+                    <div class="diary-pages">4 page</div>
+                </div>
+
+                <div class="diary-card" onclick="location.href='diary.php'">
+                    <div class="diary-cover">
+                        <h3 class="diary-title">my diary ♡</h3>
+                        <div class="diary-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Crect fill='%23f0f8f0' width='200' height='200'/%3E%3Ctext x='50%25' y='50%25' font-size='18' text-anchor='middle' fill='%234a7c4a' font-family='cursive'%3EDiary%3C/text%3E%3C/svg%3E" alt="my diary">
+                            <div class="ribbon"></div>
+                        </div>
+                        <div class="heart-icon">♡</div>
+                    </div>
+                    <div class="diary-info">
+                        <span class="diary-name">New Diary</span>
+                        <span class="diary-badge">🔒</span>
+                    </div>
+                    <div class="diary-pages">1 page</div>
+                </div>
+
+                <div class="diary-card" onclick="location.href='diary.html'">
+                    <div class="diary-cover">
+                        <h3 class="diary-title">scrapbook</h3>
+                        <div class="diary-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Crect fill='%23f0f8f0' width='200' height='200'/%3E%3Ctext x='50%25' y='50%25' font-size='18' text-anchor='middle' fill='%234a7c4a' font-family='cursive'%3EScrapbook%3C/text%3E%3C/svg%3E" alt="scrapbook">
+                            <div class="ribbon"></div>
+                        </div>
+                        <div class="heart-icon">♡</div>
+                    </div>
+                    <div class="diary-info">
+                        <span class="diary-name">New Diary</span>
+                        <span class="diary-badge">🔒</span>
+                    </div>
+                    <div class="diary-pages">0 page</div>
+                </div>
+            </div>
+
+            <!-- Add Button -->
+            <button class="add-btn" onclick="showCreateModal()">+</button>
+        </main>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <a href="index.html" class="nav-item active">
+                <span class="nav-icon">📖</span>
+                <span class="nav-label">Diary</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">⭐</span>
+                <span class="nav-label">Favorites</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">🏪</span>
+                <span class="nav-label">Store</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">⚙️</span>
+                <span class="nav-label">Setting</span>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Create Diary Modal -->
+    <div id="createModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideCreateModal()">&times;</span>
+            <h2>Create New Diary</h2>
+            <form onsubmit="createDiary(event)">
+                <div class="form-group">
+                    <label>Diary Title:</label>
+                    <input type="text" id="diaryTitle" required placeholder="Enter diary title...">
+                </div>
+                <button type="submit" class="btn-submit">Create Diary</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
